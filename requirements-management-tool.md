@@ -1,4 +1,4 @@
-# Coding Prompt: Standalone Browser-Based Requirements Management Tool
+# Standalone Browser-Based Requirements Management Tool
 
 ## 1. Project Overview
 
