@@ -1,0 +1,60 @@
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12px;
+  }
+
+  .no-print,
+  .sidebar,
+  .top-bar,
+  .toast-container {
+    display: none !important;
+  }
+
+  .print-content {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  th, td {
+    border: 1px solid #333;
+    padding: 4px 8px;
+  }
+
+  th {
+    background: #f0f0f0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  h1 { page-break-before: always; }
+  h1:first-of-type { page-break-before: auto; }
+
+  .status-badge {
+    border: 1px solid #333;
+    padding: 2px 6px;
+  }
+
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+
+  @page {
+    margin: 1.5cm;
+    size: A4;
+  }
+}
